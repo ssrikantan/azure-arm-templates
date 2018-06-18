@@ -1,5 +1,5 @@
 ## SF ARM Templates - add to existing VNet, use existing Standard Load Balancers
-Primary author of the ARM template - **anildwa@microsoft.com (Anil Dwarkanath)**
+Primary author of the ARM template - @anildwa
 
 ## Key settings and features implemented ##
 
