@@ -119,7 +119,7 @@
         },
         "sourceVaultValue": {
             "type": "string",
-            "defaultValue": "/subscriptions/fa8957fa-3d23-49da-a6ed-f209b86835c8/resourceGroups/elkkeyvaultrg/providers/Microsoft.KeyVault/vaults/elkkeyvault",
+            "defaultValue": "/subscriptions/<your subscription id>/resourceGroups/elkkeyvaultrg/providers/Microsoft.KeyVault/vaults/elkkeyvault",
             "metadata": {
                 "description": "Resource Id of the key vault, is should be in the format of /subscriptions/<Sub ID>/resourceGroups/<Resource group name>/providers/Microsoft.KeyVault/vaults/<vault name>"
             }
@@ -168,7 +168,7 @@
 		
         "pipAddresses": {
             "type": "array",
-            "defaultValue": ["/subscriptions/fa8957fa-3d23-49da-a6ed-f209b86835c8/resourceGroups/sfclspiprg/providers/Microsoft.Network/publicIPAddresses/sfclspip","/subscriptions/fa8957fa-3d23-49da-a6ed-f209b86835c8/resourceGroups/sfclspiprg/providers/Microsoft.Network/publicIPAddresses/sfclspip2"]
+            "defaultValue": ["/subscriptions/<your subscription id>/resourceGroups/sfclspiprg/providers/Microsoft.Network/publicIPAddresses/sfclspip","/subscriptions/<your subscription id>/resourceGroups/sfclspiprg/providers/Microsoft.Network/publicIPAddresses/sfclspip2"]
         },
         
         "clusterProtectionLevel": {
