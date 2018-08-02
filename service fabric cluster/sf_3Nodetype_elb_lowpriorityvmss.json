@@ -185,7 +185,7 @@
         ,
         "vmNodeType2Size": {
             "type": "string",
-            "defaultValue": "Standard_D2_v2"
+            "defaultValue": "Standard_A2_v2"
         },
         "vnetName": {
             "type": "string",
@@ -247,7 +247,7 @@
         "lbIPName": "PublicIP-LB-FE",
         "vnetID": "[resourceId(parameters('vnetResourceGroup'), 'Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
         "overProvision": "false",
-        "vmssApiVersion": "2017-03-30",
+        "vmssApiVersion": "2017-12-01",
         "sfrpApiVersion": "2017-07-01-preview",
         "lbApiVersion": "2015-06-15",
         "vNetApiVersion": "2015-06-15",
@@ -3090,6 +3090,8 @@
                     "mode": "Automatic"
                 },
                 "virtualMachineProfile": {
+                    "priority": "Low",
+                    "evictionPolicy": "deallocate",    
                     "extensionProfile": {
                         "extensions": [
                             {
@@ -3129,13 +3131,6 @@
                                     "publisher": "Microsoft.Azure.Diagnostics",
                                     "settings": {
                                         "StorageAccount": "[variables('applicationDiagnosticsStorageAccountName')]",
-                                        "fileLogs": [
-                                            {
-                                                "file": "/tmp/mysfapp0.0.log",
-                                                "table": "EchoServiceLogs",
-                                                "sinks": "[variables('logEventHubSink')]"
-                                            }
-                                        ],
                                         "perfCfg": [],
                                         "ladCfg": {
                                             "sampleRateInSeconds": 15,
