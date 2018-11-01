@@ -212,7 +212,7 @@
         "nt0applicationEndPort": "30000",
         "nt0ephemeralStartPort": "49152",
         "nt0ephemeralEndPort": "65534",
-        "vmssApiVersion": "2017-03-30",
+        "vmssApiVersion": "2017-12-01",
         "sfrpApiVersion": "2018-02-01",
         "overProvision": "false",
         "supportLogStorageAccountName": "[parameters('supportLogStorageAccountName_p')]",
